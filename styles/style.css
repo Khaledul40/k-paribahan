@@ -7,3 +7,10 @@
 .font-inter{
     font-family: "Inter", sans-serif;
 }
+
+li{
+    display: flex;
+    gap: 100px;
+    padding-left: 20px;
+    list-style: numeric;
+}
