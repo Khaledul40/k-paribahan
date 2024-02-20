@@ -30,17 +30,22 @@ for (const btn of allBtn) {
          li.appendChild(p);
          li.appendChild(p2);
          li.appendChild(p3);
+
+         const buget = document.getElementById("grand-total").innerText;
+         const convertedBuget = parseInt(buget);
+
+         if (convertedBuget>2100) {
+            alert("Not applicable")
+            return;
+         }
         
          selectInfo.appendChild(li);
 
-         const ttlPrice = document.getElementById("ttl-price").innerText;
-
-         const convertedTtlPrice = parseInt(ttlPrice);
-         const sum = convertedTtlPrice + parseInt(priceTicket);
-         
-         
+         ttlPrice("ttl-price", parseInt(priceTicket));
+         grandTotal("grand-total", parseInt(priceTicket));
        
-       setInnerText("ttl-price", sum); 
+
+       
        setInnerText("ttl-ticket", count) 
        setInnerText("rest-ticket", deduct)
     });
@@ -49,6 +54,22 @@ for (const btn of allBtn) {
 
 function setInnerText(id, value) {
     document.getElementById(id).innerText = value;
+}
+
+function ttlPrice(id, value) {
+    const ttlPrice = document.getElementById(id).innerText;
+    const convertedTtlPrice = parseInt(ttlPrice);
+    const sum = convertedTtlPrice + parseInt(value);
+    setInnerText("ttl-price", sum);
+}
+function grandTotal(id, value) {
+    const ttlPrice = document.getElementById("ttl-price").innerText;
+    const convertedTtlPrice = parseInt(ttlPrice);
+    setInnerText("grand-total", convertedTtlPrice);
+}
+
+function setBackgroundColor(){
+    document.getElementById("a").style.backgroundColor = "lightgreen";
 }
 
 

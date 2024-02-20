@@ -161,12 +161,12 @@
                  </div>
                  <div class="w-24 h-10 bg-slate-300 rounded-lg ml-[590px] my-5"><img class="pl-8 pt-1" src="images/tabler-icon-steering-wheel.png" alt="" srcset=""></div>  
                  <div class="flex justify-between my-5">
-                  <div class="flex gap-8"><button id="a" class="ticket">A1</button><button id="a" class="ticket">A2</button></div>
-                  <div class="flex gap-8"><button id="a" class="ticket">A3</button><button id="a" class="ticket">A4</button></div>
+                  <div class="flex gap-8"><button onclick="setBackgroundColor()" id="a" class="ticket">A1</button><button onclick="setBackgroundColor()" id="a" class="ticket">A2</button></div>
+                  <div class="flex gap-8"><button onclick="setBackgroundColor()" id="a" class="ticket">A3</button><button onclick="setBackgroundColor()" id="a" class="ticket">A4</button></div>
                  </div>
                  <div class="flex justify-between my-5">
-                  <div class="flex gap-8"><button id="a" class="ticket">B1</button><button id="a" class="ticket">B2</button></div>
-                  <div class="flex gap-8"><button id="a" class="ticket">B3</button><button id="a" class="ticket">B4</button></div>
+                  <div class="flex gap-8"><button onclick="setBackgroundColor()" id="a" class="ticket">B1</button><button onclick="setBackgroundColor()" id="a" class="ticket">B2</button></div>
+                  <div class="flex gap-8"><button onclick="setBackgroundColor()" id="a" class="ticket">B3</button><button onclick="setBackgroundColor()" id="a" class="ticket">B4</button></div>
                  </div>
               </div>
               <!-- div right -->
@@ -187,6 +187,14 @@
                      <div class="flex justify-between p-2">
                       <div><p>Total Price</p></div>
                       <div><p>BDT <span id="ttl-price">0</span></p></div>
+                     </div>
+
+                     <div class="">
+                        <div><input class="h-10 rounded-lg bg-white" type="text" placeholder="Have any coupon"> <button class="w-24 h-10 bg-green-500 rounded-lg ">Apply</button></div>
+                     </div>
+                     <div class="flex justify-between p-2">
+                      <div><p>Grand Total</p></div>
+                      <div><p>BDT <span id="grand-total">0</span></p></div>
                      </div>
 
                   </div>
