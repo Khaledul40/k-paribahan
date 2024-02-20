@@ -14,3 +14,12 @@ li{
     padding-left: 20px;
     list-style: numeric;
 }
+
+.ticket{
+    width: 96px;
+    height: 40px;
+    background-color: #F1F5F9;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 10px;
+}

@@ -13,7 +13,7 @@ for (const btn of allBtn) {
 
          const selectTicket = e.target.innerText;
          const ticketClass = e .target.value = clas;
-         const priceTicket = e.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[7].childNodes[1].childNodes[5].childNodes[9].childNodes[3].childNodes[0].innerText;
+         const priceTicket = e .target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[7].childNodes[1].childNodes[5].childNodes[9].childNodes[3].childNodes[0].innerText;
 
          const selectInfo = document.getElementById("seat-info");
  
