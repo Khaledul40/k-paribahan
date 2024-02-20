@@ -25,6 +25,8 @@ for (const btn of allBtn) {
          p2.innerText = ticketClass;
          const p3 = document.createElement("p");
          p3.innerText = priceTicket;
+
+         e.target.style.backgroundColor = "lime";
          
  
          li.appendChild(p);
@@ -68,9 +70,7 @@ function grandTotal(id, value) {
     setInnerText("grand-total", convertedTtlPrice);
 }
 
-function setBackgroundColor(){
-    document.getElementById("a").style.backgroundColor = "lightgreen";
-}
+
 
 
 
