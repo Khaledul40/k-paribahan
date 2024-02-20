@@ -33,10 +33,14 @@ for (const btn of allBtn) {
         
          selectInfo.appendChild(li);
 
+         const ttlPrice = document.getElementById("ttl-price").innerText;
 
+         const convertedTtlPrice = parseInt(ttlPrice);
+         const sum = convertedTtlPrice + parseInt(priceTicket);
+         
          
        
-        
+       setInnerText("ttl-price", sum); 
        setInnerText("ttl-ticket", count) 
        setInnerText("rest-ticket", deduct)
     });
